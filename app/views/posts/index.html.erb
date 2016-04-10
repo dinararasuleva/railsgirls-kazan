@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="span8">
+      <div class="news-list">
+        <% @posts.each do |post| %>
+          <div class="news-list-item">
+            <h2>
+              <%= link_to post.title, post %>
+            </h2>
+            <small class="muted"><%= l post.created_at %></small>
+            <p>
+              <%= post.text %>
+            </p>
+            <div>
+              <%= link_to 'Edit', edit_post_path(post) %>
+              <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
+            <hr/>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="span4">
+      Sidebar
+    </div>
+
+  </div>
+</div>

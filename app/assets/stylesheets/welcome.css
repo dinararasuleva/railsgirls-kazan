@@ -1,0 +1,15 @@
+.navbar{
+	background-color: #dd390d;
+}
+
+.navbar-brand{
+	float: left;
+	line-height: 40px;
+	padding: 0 15px;
+	color: #fff;
+	font-size: 18px
+}
+.navbar .nav>li>a{
+	text-shadow: none;
+	color: #fff;
+}
